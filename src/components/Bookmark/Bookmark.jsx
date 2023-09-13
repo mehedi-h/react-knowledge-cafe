@@ -4,8 +4,8 @@ const Bookmark = ({bookmark}) => {
     const {title} = bookmark;
 
     return (
-        <div>
-            <h3 className='text-base md:text-lg lg:text-xl font-medium md:font-semibold lg:font-bold'>{title}</h3>
+        <div className='bg-gray-100 p-4 m-4 rounded-md'>
+            <h4 className='text-left text-sm md:text-lg lg:text-base font-semibold md:font-bold'>{title}</h4>
         </div>
     );
 };
