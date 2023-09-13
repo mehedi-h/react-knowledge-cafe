@@ -16,7 +16,7 @@ const Blog = ({blog, handleAddBookmarks}) => {
                 </div>
                 <div>
                     <span className='mx-2'>{reading_time} min read</span>
-                    <button onClick={handleAddBookmarks}><BsBookmarkStar></BsBookmarkStar></button>
+                    <button onClick={() => handleAddBookmarks(blog)}><BsBookmarkStar></BsBookmarkStar></button>
                 </div>
             </div>
             <h2 className="text-xl md:text-2xl font-medium md:font-semibold lg:font-bold my-1 md:my-2">{title}</h2>
